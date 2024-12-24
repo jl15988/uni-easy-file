@@ -1,0 +1,56 @@
+{
+  "name": "uni-easy-file",
+  "private": false,
+  "version": "0.0.1",
+  "description": "A simple uniApp file manipulation tool.",
+  "main": "./dist/index.js",
+  "common": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "typings": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package": "./package.json"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "build:dev": "set NODE_ENV=development&&rollup -c",
+    "build:pro": "set NODE_ENV=production&&rollup -c",
+    "toPublish": "npm publish --registry=https://registry.npmjs.org --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jl15988/uni-easy-file.git"
+  },
+  "keywords": [
+    "uni-easy-file",
+    "jl15988",
+    "file",
+    "util",
+    "uniapp",
+    "uni",
+    "utils",
+    "tool",
+    "file-utils",
+    "file-tool",
+    "file-util",
+    "easy-file"
+  ],
+  "author": "jl15988",
+  "license": "MIT",
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.14",
+    "@rollup/plugin-terser": "^0.4.4",
+    "babel-loader": "^9.2.1",
+    "rollup": "^4.25.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3"
+  }
+}
